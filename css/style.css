@@ -726,10 +726,10 @@ img {
     border-radius: 4px;
 }
 
-.services__link .services__item:hover {
+.services__item:hover {
     background: #ED7173;
     border-color: #ED7173;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 .services__img-wrap {}
@@ -747,6 +747,8 @@ img {
     line-height: 18px;
     text-align: center;
     color: #252525;
+    padding-bottom: 12px;
+    padding-top: 13px;
 }
 
 .btn.btn-sec4 {
@@ -834,7 +836,6 @@ img {
 .examples {
     padding-top: 62px;
     padding-bottom: 90px;
-    height: 723px;
 }
 
 .container {}
@@ -871,17 +872,32 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    width: 100%;
 }
 
 .examples__item {
-    height: 265px;
-    width: 265px;
+    flex: 0 1 calc((100% - 20px*3) / 4);
+    position: relative;
 }
 
-.examples__img-wrap {}
+.examples__img-wrap {
+    padding-top: 100%;
+    position: relative;
+}
 
 .examples__img {
     border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.examples__item:hover .examples__img:nth-child(2) {
+    opacity: 0;
 }
 
 .order {
