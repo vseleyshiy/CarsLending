@@ -320,14 +320,126 @@ img {
         color: #FFFFFF;
     }
 
+    .more__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        color: #E7E7E7;
+    }
+
+    .more__subtitle {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #252525;
+    }
+
+    .more__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #252525;
+    }
+
+    .car__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .car__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
     .car__item {
-        width: 167px;
         height: 118px;
+    }
+
+    .car__item-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #252525;
+    }
+
+    .car__img {
+        width: 18px;
+        height: 25px;
+    }
+
+    .services__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+    }
+
+    .services__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #252525;
+    }
+
+    .services__item-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #252525;
     }
 
     .services__item {
         height: 210px;
         width: 210px;
+    }
+
+    .reviews__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .reviews__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
     }
 
     .nav__link {
@@ -350,10 +462,6 @@ img {
     .hero__subtitle {
         font-size: 22px;
         margin-bottom: 70px;
-    }
-
-    .services__row {
-        column-gap: 16px;
     }
 }
 
@@ -540,7 +648,7 @@ img {
 }
 
 .more {
-    height: 666px;
+    min-height: 416px;
     background-color: #FFFFFF;
     padding-top: 62px;
     padding-bottom: 90px;
@@ -574,44 +682,50 @@ img {
     color: #252525;
 }
 
-.more__row {
-    width: 100%;
-    position: relative;
-}
-
 .more__list {
-
     display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    row-gap: calc(100% / 2);
 }
 
 .more__item {
     position: relative;
     width: 50%;
+    flex: 0 1 calc((100% - 66px) / 2);
+    height: 50%;
 }
 
-.more__number {
+.more__text {
+    position: relative;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+.more__item::before {
+    position: absolute;
+    content: "01";
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
-    line-height: 1;
+    line-height: 117px;
     text-align: center;
     color: #E7E7E7;
-    position: absolute;
-}
-
-.more__text {
-    width: 405px;
-    position: relative;
-    padding-top: 70px;
-    padding-left: 30px;
 }
 
 .car {
     background-image: url(../img/bg/car_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 519px;
+    min-height: 450px;
+    padding-top: 62px;
+    padding-bottom: 90px;
 }
 
 .container {}
@@ -628,7 +742,6 @@ img {
     line-height: 63px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 62px;
     padding-bottom: 10px;
 }
 
@@ -646,10 +759,11 @@ img {
 .car__list {
     display: flex;
     justify-content: space-between;
+    column-gap: 10px;
 }
 
 .car__item {
-    height: 211px;
+    min-height: 211px;
     width: 211px;
     background-color: white;
     border-radius: 4px;
@@ -657,8 +771,8 @@ img {
 
 .car__img-wrap {
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .car__img {
@@ -674,10 +788,11 @@ img {
     line-height: 18px;
     text-align: center;
     color: #252525;
+    margin-bottom: 25px;
 }
 
 .services {
-    height: 985px;
+    min-height: 631px;
     padding-bottom: 90px;
     padding-top: 62px;
 }
@@ -768,7 +883,7 @@ img {
 }
 
 .reviews {
-    height: 450px;
+    min-height: 242px;
     padding-top: 60px;
     padding-bottom: 90px;
     background-image: url(../img/bg/services_bg.png);
@@ -807,6 +922,7 @@ img {
     justify-content: space-between;
     margin-top: 66px;
     height: 100%;
+    column-gap: 16px;
 }
 
 .reviews__img-wrap {
@@ -834,6 +950,7 @@ img {
 }
 
 .examples {
+    min-height: 476px;
     padding-top: 62px;
     padding-bottom: 90px;
 }
@@ -904,7 +1021,7 @@ img {
     background-image: url(../img/bg/order__bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 503px;
+    min-height: 400px;
     padding-top: 80px;
     padding-bottom: 90px;
 }
@@ -975,14 +1092,14 @@ img {
 }
 
 .map {
-    height: 224px;
+    min-height: 190px;
     background-image: url(../img/bg/map.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .footer {
-    height: 86px;
+    min-height: 86px;
     background-color: #404040;
 }
 
