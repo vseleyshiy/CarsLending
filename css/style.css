@@ -574,24 +574,29 @@ img {
     column-gap: 16px;
 }
 
+.reviews__reviews::before {
+    content: url(../img/item/иконка\ лево.svg);
+    height: 30px;
+    width: 30px;
+    transform: translate(50%, 200%);
+}
+
+.reviews__reviews::after {
+    height: 30px;
+    width: 30px;
+    content: url(../img/item/иконка\ лево.svg);
+    transform: scaleX(-1) translateY(200%);
+
+}
+
 .reviews__img-wrap {
     height: 30px;
     width: 30px;
 }
 
-.reviews__arrow {
-    transform: translate(0, 300%);
-}
-
-.reviews__arrow.right {
-    transform: scaleX(-1) translate(0, 300%)
-}
-
-
 .reviews__review-img-wrap {
     width: 455px;
     height: 136px;
-
 }
 
 .reviews__review-img {
@@ -815,6 +820,28 @@ img {
         color: #FFFFFF;
     }
 
+    .nav__link {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    .hero {
+        padding-top: 210px;
+    }
+
+    .hero__title {
+        font-size: 42px;
+    }
+
+    .hero__subtitle {
+        font-size: 22px;
+        margin-bottom: 70px;
+    }
+
     .more__title {
         font-family: 'Roboto';
         font-style: normal;
@@ -883,6 +910,7 @@ img {
         width: 25px;
         height: 25px;
     }
+
     .car__img-wrap {
         margin-top: 19px;
         margin-bottom: 13px;
@@ -917,11 +945,6 @@ img {
         color: #252525;
     }
 
-    .services__item {
-        height: 210px;
-        width: 210px;
-    }
-
     .reviews__title {
         font-family: 'Roboto';
         font-style: normal;
@@ -942,26 +965,19 @@ img {
         color: #FFFFFF;
     }
 
-    .nav__link {
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 18px;
-        color: #FFFFFF;
+    .reviews__review-img-wrap {
+        width: 400px;
+        height: 120px;
     }
 
-    .hero {
-        padding-top: 210px;
+    .reviews__reviews::before {
+        height: 26px;
+        width: 26px;
     }
 
-    .hero__title {
-        font-size: 42px;
-    }
-
-    .hero__subtitle {
-        font-size: 22px;
-        margin-bottom: 70px;
+    .reviews__reviews::after {
+        height: 26px;
+        width: 26px;
     }
 }
 
@@ -1101,6 +1117,75 @@ img {
         line-height: 16px;
         text-align: center;
         color: #FFFFFF;
+    }
+
+    .services__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #E7E7E7;
+    }
+
+    .services__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #252525;
+    }
+
+    .services__item-text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #252525;
+    }
+
+    .reviews__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .reviews__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .reviews__reviews {
+        margin-top: 30px;
+    }
+
+    .reviews__review-img-wrap {
+        width: 320px;
+        height: 96px;
+    }
+
+    .reviews__reviews::before {
+        height: 21px;
+        width: 21px;
+    }
+
+    .reviews__reviews::after {
+        height: 21px;
+        width: 21px;
     }
 }
 
@@ -1259,7 +1344,7 @@ img {
     .car__list {
         display: block;
     }
-    
+
     .car__item {
         display: flex;
         width: 290px;
@@ -1268,6 +1353,7 @@ img {
         padding: 20px 17px;
         margin-bottom: 10px;
     }
+
     .car__item:last-child {
         margin-bottom: 0;
     }
@@ -1291,4 +1377,63 @@ img {
         line-height: 14px;
         color: #252525;
     }
+
+    .services__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #E7E7E7;
+    }
+
+    .services__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #252525;
+    }
+    .reviews {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .reviews__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .reviews__text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .reviews__review-img-wrap {
+        width: 254px;
+        height: 76px;
+    }
+    .reviews__review-img-wrap:last-child {
+        display: none;
+    }
+    .reviews__reviews::before {
+        transform: translate(100%, 100%)
+    }
+
+    .reviews__reviews::after {
+        transform: scaleX(-1) translate(100%, 100%);
+    }
+
 }
