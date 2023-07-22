@@ -744,7 +744,8 @@ img {
 }
 
 .map {
-    min-height: 190px;
+
+    height: 120px;
     background-image: url(../img/bg/map.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -999,6 +1000,19 @@ img {
         text-align: center;
         color: #252525;
     }
+
+    .order__text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .map {
+        min-width: 960px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1227,6 +1241,23 @@ img {
         text-align: center;
         color: #252525;
     }
+
+    .order__order {
+        display: block;
+    }
+
+    .order__text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .map {
+        min-width: 768px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1417,6 +1448,7 @@ img {
         line-height: 14px;
         color: #252525;
     }
+
     .services {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -1442,6 +1474,7 @@ img {
         color: #252525;
         padding-bottom: 30px;
     }
+
     .services__list {
         display: flex;
         width: 100%;
@@ -1451,6 +1484,7 @@ img {
         row-gap: 10px;
         column-gap: 10px;
     }
+
     .services__item {
         position: relative;
         width: 50%;
@@ -1503,6 +1537,7 @@ img {
     .reviews__reviews::after {
         transform: scaleX(-1) translate(100%, 100%);
     }
+
     .examples {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -1545,5 +1580,18 @@ img {
         width: 50%;
         flex: 0 1 calc((100% - 10px) / 2);
         height: 50%;
+    }
+
+    .order__text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .map {
+        min-width: 480px;
     }
 }
