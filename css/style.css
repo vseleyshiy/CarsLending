@@ -67,10 +67,7 @@ img {
     justify-content: space-between;
 }
 
-.logo-wrap {
-    margin-right: 130px;
-    padding-top: 16px;
-}
+.logo-wrap {}
 
 .logo {
     max-width: 187px;
@@ -114,10 +111,6 @@ img {
 
 .header__navigation {
     display: flex;
-}
-
-.header__navigation.footer__navigation {
-    margin-top: 25px;
 }
 
 .navigation-wrap {}
@@ -753,53 +746,59 @@ img {
 
 .footer {
     background-color: #404040;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .footer__content {
     display: flex;
-    justify-content: space-between;
 }
 
 .footer__info {
     display: flex;
-    justify-content: space-between;
-    width: 570px;
 }
 
-.footer__navigation {
-    margin-top: 24px;
-    margin-right: 70px;
+.footer__addres {
+    display: flex;
 }
 
-.footer__requisites {
-    font-family: 'Arial';
+.header__navigation.footer__navigation {
+    margin-left: 32px;
+}
+
+.footer__requis {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 25px;
+    line-height: normal;
+    margin-left: 72px;
 }
 
 .footer__information {
-    font-family: 'Arial';
+    display: flex;
+}
+
+.footer__abreviaturs {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
-    margin-top: 25px;
+    line-height: normal;
+    margin-left: 68px;
 }
 
 .footer__numbers {
-    font-family: 'Arial';
+    color: #FFF;
+    font-family: Arial;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
-    margin-top: 25px;
+    line-height: normal;
+    margin-left: 25px;
 }
 
 @media (max-width: 960px) {
@@ -1010,8 +1009,30 @@ img {
         font-weight: 400;
         line-height: normal;
     }
+
     .map {
         min-width: 960px;
+    }
+
+    .footer__addres {
+        display: block;
+    }
+
+    .footer__requis {
+        text-align: left;
+        margin-left: 32px;
+    }
+
+    .footer__information {
+        display: block;
+    }
+
+    .footer__numbers {
+        margin-left: 68px;
+    }
+
+    .header__navigation.footer__navigation {
+        display: flex;
     }
 }
 
@@ -1255,8 +1276,16 @@ img {
         font-weight: 400;
         line-height: normal;
     }
+
     .map {
         min-width: 768px;
+    }
+
+    .header__navigation.footer__navigation {
+        margin-left: 27px;
+    }
+    .footer__requis {
+        margin-left: 27px;
     }
 }
 
@@ -1591,7 +1620,28 @@ img {
         font-weight: 400;
         line-height: normal;
     }
+
     .map {
         min-width: 480px;
+    }
+
+    .footer__content {
+        display: block;
+    }
+
+    .footer__requis {
+        margin-left: 0;
+    }
+    .footer__abreviaturs {
+        margin-left: 0;
+    }
+    .footer__numbers {
+        margin-left: 0;
+    }
+    .header__navigation.footer__navigation {
+        margin-left: 0;
+    }
+    .logo {
+        text-align: center;
     }
 }
