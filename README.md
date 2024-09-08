@@ -1,3 +1,2 @@
-# cars
-машинки
-https://vseleyshiy.github.io/cars/
+# CarsLending
+Link: https://vseleyshiy.github.io/CarsLending/
